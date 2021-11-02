@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 1</title>
+</head>
+<body>
+<!--Xây dựng hàm giải phương trình bậc nhất, biết tham số là các hệ số nguyên a, b. Hàm trả về nghiệm của phương trình theo tham số đã cho.-->
+<!--Viết chương trình sử dụng hàm vừa xây dựng để giải phương trình bậc nhất với hệ số a = 5; b = 8.-->
+<!--ntote:pt bậc 1 có dạng: ax+b=0-->
+<script>
+    function ptBac1(a, b)
+    {
+        if (a === 0 && b === 0){
+            return alert('Phương trình có vô số nghiệm');
+        }
+        else if (a !== 0 && b === 0){
+            return alert('Phương trình có nghiệm x = 0');
+        }
+        else if (a === 0 && b !== 0){
+            return alert("Phương trình vô nghiệm");
+        }
+        else {
+            return alert('Phương trình có nghiệm x = ' + (-b/a));
+        }
+    }
+
+    ptBac1(5,8)
+</script>
+</body>
+</html>

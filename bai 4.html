@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài 4</title>
+</head>
+<body>
+<!--A/ Xây dựng lớp Animal với các:-->
+<!--Thuộc tính: tên và cân nặng-->
+<!--Phương thức:-->
+<!--•	setName(): để thiết đặt giá trị mới cho thuộc tính tên theo giá trị của tham số truyền vào.-->
+<!--•	setWeight(): để thiết đặt giá trị mới cho thuộc tính cân nặng theo giá trị của tham số truyền vào.-->
+<!--•	getName(): trả về tên của animal-->
+<!--•	getWeight(): trả về cân nặng của animal-->
+<!--•	toString() trả về chuỗi chứa thông tin của tên và cân nặng-->
+<!--B/ Sử dụng lớp Animal vừa định nghĩa để xây dựng một chương trình JavaScript với kịch bản như sau:-->
+<!--•	Tạo đối tượng  có tên là objAnimal1-->
+<!--•	Thiết đặt tên cho đối tượng objAnimal1 là “Elephant”-->
+<!--•	Thiết đặt cân nặng cho đối tượng objAnimal1 là 45.6-->
+<!--•	Gọi phương thức toString()-->
+<!--•	Tạo đối tượng có tên là objAnimal2 sử dụng phương thức khởi tạo có 2 tham số là tên và cân nặng-->
+<!--•	Đổi tên cho đối tượng objAnimal2 thành “Mouse”-->
+<script>
+        class Animal {
+            name;
+            weight;
+            constructor(name,weight) {
+                this.name = name;
+                this.weight = weight;
+            }
+
+            getName() {
+                return this.name;
+            }
+
+            setName(name) {
+                this.name = name;
+            }
+
+            getWeight() {
+                return this.weight;
+            }
+
+            setWeight(weight) {
+                this.weight = weight;
+            }
+            toString() {
+                document.write('Tên :'+ ' '+this.name+' ; ' +'Cân nặng:'+ ' '+this.weight);
+            }
+        }
+        let objAnimal1 = new Animal();
+        objAnimal1.setName("Elephant");
+        objAnimal1.setWeight(45.6);
+        objAnimal1.toString();
+        let objAnimal2 = new Animal('Dog',10);
+        objAnimal2.setName("Mouse")
+</script>
+</body>
+</html>
